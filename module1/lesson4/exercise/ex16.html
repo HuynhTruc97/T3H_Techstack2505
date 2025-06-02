@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 16</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .sidebar {
+            width: 160px;
+            background-color: #C4C4C4;
+            border: 1px solid #0C8CE9;
+            padding-top: 60px;
+        }
+
+        .sidebar__item {
+            text-align: center;
+            background-color: #E4E4E4;
+            border: 1px solid #959595;
+            padding: 10px 0;
+            margin-bottom: 12px;
+        }
+
+        .sidebar__item:hover {
+            background-color: #8A8989;
+        }
+
+        .content {
+            flex-grow: 1;
+        }
+
+        .content__header {
+            text-align: right;
+            background-color: #C4C4C4;
+            padding: 12px 30px;
+        }
+
+        .content__review {
+            display: flex;
+            justify-content: center;
+            background-color: #C4C4C4;
+            margin: 20px 30px 20px 20px;
+            padding: 8px 0px;
+        }
+
+        .review__text {
+            margin-right: 15px;
+        }
+
+        .review__star {
+            display: flex;
+            gap: 8px;
+        }
+
+        .review__star>div {
+            width: 20px;
+            height: 20px;
+            background-color: #D7DA4D;
+        }
+
+        .review__rated {
+            color: #fff;
+            border: 1px solid #000;
+            margin-left: 45px;
+        }
+
+        .content__metrics,
+        .content__actions {
+            margin: 0 70px 20px 20px;
+        }
+
+        .metrics_heading,
+        .actions__heading {
+            margin-bottom: 5px;
+        }
+
+        .metrics_item {
+            display: flex;
+            gap: 85px;
+        }
+
+        .metrics_item>div {
+            flex: 1;
+            height: 120px;
+            font-size: 12px;
+            background-color: #C4C4C4;
+            padding: 16px 10px;
+        }
+
+        .actions__list {
+            display: flex;
+            gap: 70px;
+        }
+
+        .actions__item {
+            flex: 1;
+            height: 120px;
+            text-align: center;
+            background-color: #C4C4C4;
+        }
+
+        .actions__item--name {
+            font-size: 12px;
+            margin: 20px 0;
+        }
+
+        .actions__item--btn {
+            width: 85px;
+            font-size: 12px;
+            color: #fff;
+            background-color: #4D89E3;
+            border: none;
+            margin-top: 36px;
+            padding: 5px 0;
+        }
+
+        .content__started {
+            display: flex;
+            justify-content: center;
+            background-color: #C4C4C4;
+            margin: 50px 120px 0 100px;
+        }
+
+        .started__video {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 220px;
+            height: 190px;
+            font-size: 12px;
+            background-color: #FEF5F5;
+            border: 1px solid #000;
+            margin: 6px 12px;
+        }
+
+        .started__content {
+            margin-left: 45px;
+        }
+
+        .started__heading {
+            margin: 20px 0;
+        }
+
+        .started__discription {
+            font-size: 12px;
+        }
+
+        .started__btn {
+            font-size: 12px;
+            padding: 8px 16px;
+            margin: 40px 0;
+            background-color: #FFFAFA;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li class="sidebar__item">Dashboard</li>
+                <li class="sidebar__item">Switcher</li>
+                <li class="sidebar__item">Checkout</li>
+                <li class="sidebar__item">Customization</li>
+                <li class="sidebar__item">Pricing</li>
+                <li class="sidebar__item">Documents</li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <div class="content__header">Admin</div>
+
+            <div class="content__review">
+                <div class="review__text">How would you rate our app?</div>
+                <div class="review__star">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="review__rated">Not rated</div>
+            </div>
+
+            <div class="content__metrics">
+                <div class="metrics_heading">Metrics</div>
+                <div class="metrics_item">
+                    <div>Total pageview by country</div>
+                    <div>Total pageview use local currency</div>
+                    <div>Order generate form Transcy</div>
+                </div>
+            </div>
+
+            <div class="content__actions">
+                <div class="actions__heading">Quick Actions</div>
+                <div class="actions__list">
+                    <div class="actions__item">
+                        <div class="actions__item--name">Documents</div>
+                        <button class="actions__item--btn">Access now</button>
+                    </div>
+                    <div class="actions__item">
+                        <div class="actions__item--name">Switch currencies</div>
+                        <button class="actions__item--btn">Convert now</button>
+                    </div>
+                    <div class="actions__item">
+                        <div class="actions__item--name">Multiple currencies</div>
+                        <button class="actions__item--btn">Convert now</button>
+                    </div>
+                    <div class="actions__item">
+                        <div class="actions__item--name">Set up switcher</div>
+                        <button class="actions__item--btn">Set up now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content__started">
+                <div class="started__video">Video setup</div>
+                <div class="started__content">
+                    <div class="started__heading">Getting Started</div>
+                    <div class="started__discription">Discover how LAI can power up your store with our servies.</div>
+                    <button class="started__btn">Learn about getting started</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

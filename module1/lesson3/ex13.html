@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 13</title>
+    <style>
+        .container {
+            width: 500px;
+            border: 1px solid #96aed2;
+            background-color: #d9e8fb;
+            padding: 0 20px 20px 20px;
+            margin: 12px;
+        }
+
+        .content {
+            border: 1px solid #BC5C58;
+            background-color: #F8CECC;
+            padding: 10px;
+            margin: 20px 0;
+        }
+
+        button {
+            color: #fff;
+            padding: 5px 10px;
+            margin-right: 5px;
+            border-radius: 5px;
+        }
+
+        .delete {
+            background-color: #D80073;
+            border: 1px solid #B4004F;
+        }
+
+        .keep {
+            background-color: #1BA1E2;
+            border: 1px solid #087DBE;
+        }
+
+        .dialog {
+            width: 120px;
+            height: 40px;
+            padding: 10px;
+            text-align: center;
+            background-color: #B0E3E6;
+            border: 1px solid #147D85;
+            position: absolute;
+            top: 80px;
+            left: 0;
+            display: none;
+        }
+
+        .btn_delete:hover .dialog {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium voluptatem accusamus,
+            quae dicta optio enim cupiditate dolorem iusto tempora esse neque a eos consequatur magnam temporibus
+            voluptas placeat. Beatae, inventore!</div>
+        <div class="btn_delete">
+            <button class="delete">Delete</button>
+            <button class="keep">Keep</button>
+            <div class="dialog"> Có không giữ, xóa đừng tiếc</div>
+        </div>
+    </div>
+</body>
+
+</html>

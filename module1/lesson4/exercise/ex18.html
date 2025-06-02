@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 18</title>
+    <link rel="stylesheet" href="./fonts/fontawesome-free-6.7.2/css/all.min.css">
+    <style>
+        html, body {
+            height: 100%;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .flex-center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .text-bold {
+            font-weight: 600;
+        }
+
+        .header {
+            display: flex;
+            color: #fff;
+            background-color: #6868AC;
+            padding: 8px 20px;
+            justify-content: space-between;
+        }
+
+        .header__user {
+            display: flex;
+        }
+
+        .user__avt {
+            width: 30px;
+            height: 30px;
+            color: #000;
+            background-color: #FFC4B0;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .container {
+            display: flex;
+            background-color: #F6F6F7;
+            height: calc(100%-46px);
+        }
+
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 200px;
+            border-right: 1px solid #ccc;
+            padding: 20px 0;
+        }
+
+        .sidebar__item {
+            display: flex;
+            padding: 8px 20px;
+            margin-right: 3px;
+        }
+
+        .sidebar__item:hover {
+            background-color: #EDEEEF;
+            border-left: 3px solid #6868AC;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .sidebar__item>i {
+            color: #5C5F62;
+            width: 18px;
+        }
+
+        .item__name {
+            color: #222425;
+            font-size: 14px;
+            font-weight: 500;
+            margin-left: 10px;
+
+        }
+
+        .sidebar__item:hover>i,
+        .sidebar__item:hover .item__name {
+            color: #6868AC;
+        }
+
+        .sidebar__item--other {
+            margin: 30px 0 5px 20px;
+            font-size: 11px;
+        }
+
+        .sidebar__footer {
+            text-align: center;
+        }
+
+        .sidebar__footer--text {
+            color: #222425;
+            font-size: 11px;
+            font-weight: 500;
+        }
+
+        .sidebar__footer--rate {
+            color: #5C5F62;
+        }
+
+        .sidebar__footer--rate>i {
+            margin: 10px 5px;
+        }
+
+        .content {
+            flex-grow: 1;
+            margin: 30px 100px;
+        }
+
+        .content__heading {
+            margin-bottom: 10px;
+        }
+
+        .content__heading--text {
+            color: #222425;
+            font-size: 22px;
+            font-weight: 500;
+        }
+
+        .content__heading--detail,
+        .item__info--detail {
+            color: #7F8286;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .content__item {
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 20px 15px;
+            margin-bottom: 20px;
+            box-shadow: 2px 2px 4px 0 #dbdbdb;
+        }
+
+        .item__info--heading {
+            color: #222425;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .item__price>div {
+            color: #222425;
+            text-align: right;
+            font-size: 13px;
+            font-weight: 500;
+        }
+
+        .item__info--disabled {
+            color: #222425;
+            font-size: 14px;
+        }
+
+        .btn__enabled {
+            width: 80px;
+            height: 35px;
+            color: #fff;
+            background-color: #6868AC;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .btn__switch {
+            width: 100px;
+            height: 35px;
+            color: #fff;
+            background-color: #6868AC;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .btn__enabled:hover,
+        .btn__switch:hover {
+            color: #222425;
+            background-color: #fff;
+            border: 1px solid #7F8286;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header__logo flex-center">CURRENCY Switcher</div>
+        <div class="header__user">
+            <div class="user__avt flex-center">XA</div>
+            <div class="user__name flex-center">Jerry Samuels</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="sidebar">
+            <div class="sidebar__list">
+                <div class="sidebar__item">
+                    <i class="fa-solid fa-house flex-center"></i>
+                    <div class="item__name">Dashboard</div>
+                </div>
+                <div class="sidebar__item">
+                    <i class="fa-solid fa-repeat flex-center"></i>
+                    <div class="item__name">Switcher</div>
+                </div>
+                <div class="sidebar__item">
+                    <i class="fa-solid fa-paintbrush flex-center"></i>
+                    <div class="item__name">Customization</div>
+                </div>
+                <div class="sidebar__item--other">OTHER</div>
+                <div class="sidebar__item">
+                    <i class="fa-solid fa-dollar-sign flex-center"></i>
+                    <div class="item__name">Pricing</div>
+                </div>
+                <div class="sidebar__item">
+                    <i class="fa-solid fa-circle-info flex-center"></i>
+                    <div class="item__name">Documents</div>
+                </div>
+            </div>
+
+            <div class="sidebar__footer">
+                <div class="sidebar__footer--text">How would you rate our app?</div>
+                <div class="sidebar__footer--rate">
+                    <i class="fa-solid fa-face-smile"></i>
+                    <i class="fa-solid fa-face-frown"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="content__heading">
+                <div class="content__heading--text">Multiple currencies</div>
+                <div class="content__heading--detail">Setting switcher on your page payment.</div>
+            </div>
+            <div class="content__item">
+                <div class="item__info">
+                    <div class="item__info--heading">All enabled currencies</div>
+                    <div class="item__info--detail">Currencies that are enabled on your Shopify Payment.</div>
+                </div>
+                <div class="item__price">
+                    <div>VIETNAM DONG (VND)</div>
+                    <div>RUSSIAN RUBLE (RUB)</div>
+                    <div>UNITED STATES DOLLAR (USD)</div>
+                    <div>EASTERN CARIBBEAN DOLLAR (XCD)</div>
+                </div>
+            </div>
+
+            <div class="content__item">
+                <div class="item__info">
+                    <div class="item__info--heading">Auto switch</div>
+                    <div class="item__info--detail">Auto switch currency based on customers' locations.</div>
+                    <div class="item__info--disabled">This setting is <span class="text-bold">disabled.</span></div>
+                </div>
+                <button class="btn__enabled">Enabled</button>
+            </div>
+
+            <div class="content__item">
+                <div class="item__info">
+                    <div class="item__info--heading">Allow changing custom HTML price</div>
+                    <div class="item__info--detail">Allow changing the custom HTML price which is added manually on
+                        your shop.</div>
+                    <div class="item__info--disabled">This setting is <span class="text-bold">disabled.</span></div>
+                </div>
+                <button class="btn__enabled">Enabled</button>
+            </div>
+
+            <div class="content__item">
+                <div class="item__info">
+                    <div class="item__info--heading">Change to Switch Currencies</div>
+                    <div class="item__info--detail">If you don't want to use Multiple Currencies feature, you can
+                        change back to the original functions of this app.</div>
+                </div>
+                <button class="btn__switch">Switch now</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

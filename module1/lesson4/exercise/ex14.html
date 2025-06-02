@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 14</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+
+        .header {
+            background-color: #FFF2CC;
+            border: 1px solid #D6B657;
+            padding: 15px;
+            margin: 10px;
+        }
+
+        .intro {
+            background-color: #D5E8D4;
+            border: 1px solid #90BC77;
+            padding: 50px 0;
+            margin: 10px;
+        }
+
+        .feature {
+            display: flex;
+            margin: 0 5px;
+        }
+
+        .feature>div {
+            flex-grow: 1;
+            background-color: #EDC5C3;
+            border: 1px solid #CF8380;
+            padding: 25px 0;
+            margin: 0 5px 10px;
+        }
+
+        .form {
+            display: flex;
+            margin: 0 5px;
+        }
+
+        .form>div {
+            background-color: #ffff88;
+            border: 1px solid #5E6063;
+            padding: 50px 0;
+            margin: 10px 5px 0;
+        }
+
+        .form>div:first-child {
+            flex: 2;
+        }
+
+        .form>div:last-child {
+            flex: 3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="intro">Intro</div>
+        <div class="feature">
+            <div>Feature 1</div>
+            <div>Feature 2</div>
+            <div>Feature 3</div>
+            <div>Feature 4</div>
+            <div>Feature 5</div>
+        </div>
+        <div class="form">
+            <div>Image 1</div>
+            <div>Login form</div>
+        </div>
+        <div class="header">Footer</div>
+    </div>
+</body>
+
+</html>

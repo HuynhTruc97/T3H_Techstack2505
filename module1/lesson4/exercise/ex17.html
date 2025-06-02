@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 17</title>
+    <link rel="stylesheet" href="./fonts/fontawesome-free-6.7.2/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .container {
+            margin: 80px;
+        }
+
+        .heading {
+            font-size: 32px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bold;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+
+        .nav__search {
+            position: relative;
+        }
+
+        .search__icon {
+            font-size: 20px;
+            position: absolute;
+            top: 30%;
+            left: 15px;
+        }
+
+        .nav__search>input {
+            width: 270px;
+            height: 44px;
+            border: 1px solid #C8D0E9;
+            border-radius: 4px;
+            padding-left: 48px;
+        }
+
+        .sub-nav {
+            display: flex;
+        }
+
+        .sub-nav__item {
+            color: #494E5F;
+            padding: 10px 10px 12px 10px;
+        }
+
+        .sub-nav__item:hover {
+            color: #fff;
+            background-color: #849FFF;
+            border-radius: 8px;
+        }
+
+        .card {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .card__item {
+            width: 32%;
+            display: flex;
+            padding: 20px;
+            margin: 20px 0 10px;
+        }
+
+        .card__item:hover {
+            border: 1px solid #C1CAE6;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px 0 #dedede;
+        }
+
+        .card__image>img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
+
+        .card__detail {
+            margin-left: 10px;
+        }
+
+        .card__name {
+            font-size: 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .card__address {
+            font-size: 15px;
+            font-weight: 500;
+            margin: 5px 0;
+        }
+
+        .card__tag {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            margin: 20px 0 10px;
+        }
+
+        .tag__item {
+            font-size: 12px;
+            font-weight: 500;
+            color: #576DBC;
+            border: 1px solid #C1CAE6;
+            border-radius: 10px;
+            padding: 2px 6px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="heading">Users</div>
+        <div class="nav">
+            <div class="nav__search">
+                <i class="fa-solid fa-magnifying-glass search__icon"></i>
+                <input type="text" placeholder="Search users">
+            </div>
+            <div class="sub-nav">
+                <div class="sub-nav__item">Reputation</div>
+                <div class="sub-nav__item">New users</div>
+                <div class="sub-nav__item">Voters</div>
+                <div class="sub-nav__item">Editors</div>
+                <div class="sub-nav__item">Modeators</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__item">
+                <div class="card__image">
+                    <img src="./assets/Lelah_Nichols.png" alt="">
+                </div>
+                <div class="card__detail">
+                    <div class="card__name">Lelah Nichols</div>
+                    <div class="card__address">Troy, MI</div>
+                    <div class="card__tag">
+                        <div class="tag__item">clothes</div>
+                        <div class="tag__item">stem</div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="card__item">
+                <div class="card__image">
+                    <img src="./assets/Lelah_Nichols.png" alt="">
+                </div>
+                <div class="card__detail">
+                    <div class="card__name">Jesus Weiss</div>
+                    <div class="card__address">Fort Worth, TX</div>
+                    <div class="card__tag">
+                        <div class="tag__item">headset</div>
+                        <div class="tag__item">gadget</div>
+                        <div class="tag__item">speed</div>
+                        <div class="tag__item">winter</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card__item">
+                <div class="card__image">
+                    <img src="./assets/Lelah_Nichols.png" alt="">
+                </div>
+                <div class="card__detail">
+                    <div class="card__name">Annie Rice</div>
+                    <div class="card__address">Austin, TX</div>
+                    <div class="card__tag">
+                        <div class="tag__item">road</div>
+                        <div class="tag__item">mountain</div>
+                        <div class="tag__item">trip</div>
+                        <div class="tag__item">earth</div>
+                        <div class="tag__item">nature</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card__item">
+                <div class="card__image">
+                    <img src="./assets/Lelah_Nichols.png" alt="">
+                </div>
+                <div class="card__detail">
+                    <div class="card__name">Robert Brower</div>
+                    <div class="card__address">Cincinnati, OH</div>
+                    <div class="card__tag">
+                        <div class="tag__item">Maintenance</div>
+                        <div class="tag__item">gears</div>
+                        <div class="tag__item">frames</div>
+                        <div class="tag__item">repair</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card__item">
+                <div class="card__image">
+                    <img src="./assets/Lelah_Nichols.png" alt="">
+                </div>
+                <div class="card__detail">
+                    <div class="card__name">Amy Campbell</div>
+                    <div class="card__address">Warrior, AL</div>
+                    <div class="card__tag">
+                        <div class="tag__item">music</div>
+                        <div class="tag__item">disks</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card__item">
+                <div class="card__image">
+                    <img src="./assets/Lelah_Nichols.png" alt="">
+                </div>
+                <div class="card__detail">
+                    <div class="card__name">Anthony S. Morin</div>
+                    <div class="card__address">Lyndhurst, NJ</div>
+                    <div class="card__tag">
+                        <div class="tag__item">vintage</div>
+                        <div class="tag__item">electric</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

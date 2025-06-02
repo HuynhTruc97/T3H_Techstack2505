@@ -1,0 +1,198 @@
+/* Common Responsive */
+@media (max-width: 1024px) {
+    .khaki-bg {
+        order: 1;
+    }
+
+    .lightblue-bg {
+        order: 4;
+    }
+
+    .lavender-bg {
+        order: 2;
+    }
+
+    .paleturquoise-bg {
+        order: 5;
+    }
+
+    .navajowhite-bg {
+        order: 3;
+    }
+
+    .palegreen-bg {
+        order: 6;
+    }
+
+}
+
+/* Width 720px - 1024px */
+@media (max-width: 1024px) and (min-width: 720px) {
+    .header-search__input {
+        width: 166px;
+    }
+
+    .card__list {
+        gap: 16px;
+    }
+
+    .card__item {
+        width: 328px;
+        height: 228px;
+    }
+
+    .card-avt {
+        width: 184px;
+        padding: 16px 8px;
+        gap: 8px;
+        position: relative;
+    }
+
+    .card-avt__image>img {
+        width: 168px;
+        height: 156px;
+    }
+
+    .card-avt__status {
+        width: 32px;
+        font-size: 0;
+        color: transparent;
+    }
+
+    .card-avt__call {
+        gap: 8px;
+    }
+
+    .card-info {
+        width: 144px;
+        padding: 16px;
+        position: relative;
+    }
+
+    .card-infomation {
+        gap: 8px;
+    }
+
+    .card-info__name {
+        font-size: 24px;
+    }
+
+    .card-info__position {
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    .card-info__address,
+    .card-info__language {
+        display: none;
+    }
+
+    .card-info__social {
+        gap: 8px;
+    }
+
+    .card-avt__call {
+        position: absolute;
+        right: -136px;
+        bottom: 8px;
+    }
+
+    .card-info__social {
+        position: absolute;
+        left: -184px;
+        bottom: 8px;
+    }
+}
+
+/* Width 510px - 719px */
+@media (max-width: 719px) and (min-width: 510px) {
+
+    .header-search,
+    .header-user {
+        display: none;
+    }
+
+    .card__item {
+        width: 478px;
+    }
+}
+
+/* Width 360px - 509px */
+@media (min-width: 360px) and (max-width: 509px) {
+
+    .header-search,
+    .header-user {
+        display: none;
+    }
+
+    .card__list {
+        gap: 16px;
+    }
+
+    .card__item {
+        width: 328px;
+        height: 228px;
+    }
+
+    .card-avt {
+        width: 184px;
+        padding: 16px 8px;
+        gap: 8px;
+        position: relative;
+    }
+
+    .card-avt__image>img {
+        width: 168px;
+        height: 156px;
+    }
+
+    .card-avt__status {
+        width: 32px;
+        font-size: 0;
+        color: transparent;
+    }
+
+    .card-avt__call {
+        gap: 8px;
+    }
+
+    .card-info {
+        width: 144px;
+        padding: 16px;
+        position: relative;
+    }
+
+    .card-infomation {
+        gap: 8px;
+    }
+
+    .card-info__name {
+        font-size: 24px;
+    }
+
+    .card-info__position {
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    .card-info__address,
+    .card-info__language {
+        display: none;
+    }
+
+    .card-info__social {
+        gap: 8px;
+    }
+
+    .card-avt__call {
+        position: absolute;
+        right: -136px;
+        bottom: 8px;
+    }
+
+    .card-info__social {
+        position: absolute;
+        left: -184px;
+        bottom: 8px;
+    }
+}

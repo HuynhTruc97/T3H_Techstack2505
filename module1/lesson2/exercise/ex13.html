@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 13</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 740px;
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h3 {
+            font-size: 30px;
+            font-weight: 400;
+            padding-bottom: 20px;
+        }
+
+        p {
+            font-size: 14px;
+            color: #A2A2A2;
+        }
+
+        .form {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #F2F3F5;
+        }
+
+        input {
+            width: 300px;
+            height: 40px;
+            margin: 0 10px 20px 10px;
+            padding: 0 15px;
+            border-radius: 2px;
+            border: 1px solid #aaa;
+        }
+
+        select {
+            width: 300px;
+            height: 40px;
+            margin: 0 10px 20px 10px;
+            border-radius: 2px;
+            border: 1px solid #aaa;
+            padding: 0 15px;
+        }
+
+        textarea {
+            width: 627px;
+            height: 100px;
+            padding: 15px;
+            border-radius: 2px;
+            border: 1px solid #aaa;
+            margin-bottom: 20px;
+        }
+
+        button {
+            width: 627px;
+            height: 40px;
+            background-color: #2D3032;
+            color: #fff;
+            border-radius: 2px;
+            border: none;
+        }
+
+        select option:disabled {
+            color: #757575;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3>Need Help? Sure we are Online!</h3>
+        <p>Let us give you more details about the special offer website you want us. Please fill out the fom below.</p>
+        <p>We have million of website owners who happy to work with us!</p>
+        <div class="form">
+            <div>
+                <input type="text" class="form__first-name" placeholder="First Name">
+                <input type="text" class="form__last-name" placeholder="Last Name">
+            </div>
+            <div>
+                <input type="email" class="form__email" placeholder="Your Email">
+                <input type="number" class="form__phone" placeholder="Your Phone">
+            </div>
+            <div>
+                <select>
+                    <option value="" disabled selected hidden>Select Country</option>
+                    <option value="country">Viet Nam</option>
+                    <option value="country">Japan</option>
+                    <option value="country">China</option>
+                </select>
+                <select>
+                    <option value="" disabled selected hidden>Select Course</option>
+                    <option value="country">Front-end Developer</option>
+                    <option value="country">Full-stack Developer</option>
+                    <option value="country">UI/UX Design</option>
+                </select>
+            </div>
+            <textarea name="" id="" placeholder="Content"></textarea>
+            <button>Submit</button>
+        </div>
+    </div>
+</body>
+
+</html>

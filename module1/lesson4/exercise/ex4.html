@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 4</title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ebebeb;
+        }
+
+        .container {
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 2px 2px 8px 0 #aaa;
+        }
+
+        .item {
+            display: flex;
+            margin: 5px 0;
+        }
+
+        .item>label {
+            padding: 0 10px;
+            text-align: right;
+            flex: 1;
+        }
+
+        .item>input {
+            border: 1px solid #aaa;
+            border-radius: 3px;
+            width: 200px;
+            padding: 3px;
+        }
+
+        .btn {
+            color: #fff;
+            background-color: #4cb050;
+            border: none;
+            border-radius: 3px;
+            padding: 8px;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">
+            <label for="name">Name:</label>
+            <input type="text">
+        </div>
+        <div class="item">
+            <label for="email">Email:</label>
+            <input type="text">
+        </div>
+        <div class="item">
+            <label for="msg">Message:</label>
+            <input type="text">
+        </div>
+        <button class="btn">Submit</button>
+    </div>
+</body>
+
+</html>

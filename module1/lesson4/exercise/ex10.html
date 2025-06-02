@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 10</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+
+        .header,
+        .sidebar,
+        .main-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .header {
+            background-color: #F0E4C0;
+            border: 1px solid #D6B657;
+            padding: 10px;
+            margin: 10px 10px 0 10px;
+        }
+
+        .content {
+            display: flex;
+            height: 500px;
+        }
+
+        .sidebar {
+            width: 100px;
+            background-color: #F8CECC;
+            border: 1px solid #C26764;
+            padding: 10px;
+            margin: 10px 0 10px 10px;
+
+        }
+
+        .main-content {
+            flex: 1;
+            background-color: #D5E8D4;
+            border: 1px solid #8EBA74;
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="content">
+            <div class="sidebar">Left sidebar</div>
+            <div class="main-content">Content</div>
+        </div>
+    </div>
+</body>
+
+</html>

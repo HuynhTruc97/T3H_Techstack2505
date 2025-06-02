@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 11</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: fit-content;
+            height: 500px;
+            border: 1px solid #96aed2;
+            background-color: #d9e8fb;
+            padding: 16px;
+            margin: 12px;
+            position: relative;
+        }
+
+        .container__element {
+            width: 80px;
+            border: 1px solid #d8bd68;
+            background-color: #fff2cd;
+            padding: 8px 12px;
+            margin: 8px 0;
+            text-align: center;
+        }
+
+        .container__element--relative {
+            position: relative;
+        }
+
+        .menu {
+            position: absolute;
+            top: 0;
+            left: 125px;
+            border: 1px solid #6a6a6a;
+            display: none;
+        }
+
+        .menu__element {
+            background-color: #F5F5F5;
+            border-bottom: 1px solid #6a6a6a;
+            padding: 8px 12px;
+            text-align: center;
+        }
+
+        .menu__element:nth-child(4) {
+            border: none;
+        }
+
+        .container__element--relative:hover .menu {
+            display: block;
+        }
+
+        .footer {
+            position: absolute;
+            width: 100%;
+            left: 0;
+            bottom: 16px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container__element">Home</div>
+        <div class="container__element container__element--relative">
+            Users
+            <div class="menu">
+                <div class="menu__element">Customers</div>
+                <div class="menu__element">Admin</div>
+                <div class="menu__element">VIP</div>
+                <div class="menu__element">My Staffs</div>
+            </div>
+        </div>
+        <div class="container__element">Products</div>
+        <div class="container__element">Others</div>
+        <div class="footer">Copyright 2022</div>
+    </div>
+</body>
+
+</html>

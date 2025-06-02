@@ -1,0 +1,255 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+body {
+    margin: 5px;
+}
+
+.blue-text {
+    color: #1414D0;
+}
+
+.red-text {
+    color: #ff4242;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 32px;
+    background-color: #FFF2CC;
+    border: 1px solid #EAD8A2;
+}
+
+.header-logo {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.header-logo__image {
+    width: 40px;
+    height: 40px;
+    background-color: #E1D5E7;
+    border: 1px solid #A282AC;
+    border-radius: 50%;
+}
+
+.header-logo__name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav__item {
+    padding: 8px 16px;
+    color: #000;
+    text-decoration: none;
+}
+
+.header-nav__item:hover {
+    background-color: #DAE8FC;
+    border: 1px solid #7E9AC1;
+    border-radius: 5px;
+}
+
+.container {
+    margin: 24px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.product {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 36px;
+}
+
+.product-image {
+    display: grid;
+    gap: 16px;
+}
+
+.product-image>div {
+    background-color: #F5F5F5;
+    border: 1px solid #B1B1B1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-image>div:first-child {
+    padding: 50px 0;
+    margin-bottom: 16px;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 4px;
+}
+
+.product-info__name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.product-info__item {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.product-info__item-heading {
+    font-weight: bold;
+}
+
+.product-info__item-heading>span:nth-child(1) {
+    display: inline-block;
+    width: 100px;
+}
+
+.product-info__item-heading>span:nth-child(2) {
+    font-weight: normal;
+}
+
+.product-info__btn {
+    display: flex;
+    gap: 8px;
+}
+
+.btn-item {
+    padding: 4px 12px;
+    border: 1px solid;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-item:hover {
+    background-color: #a4d4d7;
+    border: 1px solid #4AA3A9;
+}
+
+.product-info__order {
+    display: flex;
+    gap: 16px;
+}
+
+.product-info__order>input {
+    width: 60px;
+    height: 32px;
+    padding: 8px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+.btn-cart {
+    padding: 0 16px;
+    background-color: #F8CECC;
+    border: 1px solid #E1A3A0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.comment {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.comment-heading {
+    font-weight: bold;
+}
+
+.comment-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border: 1px solid;
+    padding: 8px 16px;
+}
+
+.comment-item__heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.comment-item__info {
+    display: flex;
+    align-items: center;
+}
+
+.comment-item__avt {
+    width: 30px;
+    height: 30px;
+    background-color: #E1D5E7;
+    border: 1px solid #A282AC;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.comment-item__user-name {
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.comment-item__user-address {
+    font-style: italic;
+    color: #aaa;
+}
+
+.comment-item__rating {
+    color: #CCCC00;
+}
+
+.comment-item__date {
+    padding: 0 4px;
+    font-style: italic;
+}
+
+.page {
+    display: flex;
+    gap: 16px;
+}
+
+.page-item {
+    padding: 8px 12px;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.page-item:hover {
+    opacity: 0.5;
+}
+
+.footer {
+    padding: 16px 32px;
+    background-color: #FFF2CC;
+    border: 1px solid #EAD8A2;
+}
+
+.footer-logo {
+    font-weight: bold;
+}
+
+.footer-info {
+    display: flex;
+    gap: 72px;
+    margin: 8px 0;
+}

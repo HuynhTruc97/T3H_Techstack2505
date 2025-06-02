@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 9</title>
+    <link rel="stylesheet" href="./fonts/fontawesome-free-6.7.2/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            border: 1px solid #E1CA85;
+            background-color: #FFF2CC;
+            display: flex;
+            justify-content: space-between;
+            margin: 10px;
+            align-items: center;
+        }
+
+        .logo1 {
+            font-size: 18px;
+            border: 1px solid #82876C;
+            background-color: #CDEB8B;
+            margin: 8px;
+            padding: 4px 16px;
+        }
+
+        .nav1 {
+            margin: 8px 16px 8px;
+            display: flex;
+            border: 1px solid #807872;
+        }
+
+        .item1 {
+            width: 64px;
+            height: 32px;
+            line-height: 32px;
+            font-size: 14px;
+            text-align: center;
+            border-right: 1px solid #807872;
+            background-color: #FFCCCC;
+        }
+
+        .item1:last-child {
+            border: none;
+        }
+
+        .logo2,
+        .logo3 {
+            display: flex;
+        }
+
+        .logo2>div,
+        .logo3>div {
+            font-size: 18px;
+            border: 1px solid #82876C;
+            background-color: #CDEB8B;
+            margin: 8px;
+            padding: 4px 16px;
+        }
+
+        .logo2>h3,
+        .logo3>h3 {
+            line-height: 52px;
+        }
+
+        .nav2,
+        .nav3 {
+            margin: 8px 16px 8px;
+            display: flex;
+        }
+
+        .item2 {
+            width: 64px;
+            height: 32px;
+            line-height: 32px;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .item2:last-child {
+            border: 1px solid #88B66C;
+            background-color: #D5E8D4;
+        }
+
+        .avt3,
+        .avt4 {
+            height: 32px;
+            width: 32px;
+            border: 1px solid #88B66C;
+            background-color: #D5E8D4;
+            border-radius: 50%;
+            margin: 0 12px;
+        }
+
+        .item3 {
+            width: 72px;
+            height: 32px;
+            line-height: 32px;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .avt4 {
+            margin: 16px;
+        }
+
+        .center,
+        .right {
+            display: flex;
+            align-items: center;
+        }
+
+        .center__item {
+            text-align: center;
+            width: 60px;
+            padding: 0 10px;
+        }
+
+        .item__icon {
+            padding: 10px 0;
+            font-size: 25px;
+        }
+
+        .item4 {
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .right {
+            margin-right: 16px;
+        }
+        
+        .notify {
+            position: relative;
+        }
+
+        .notify_icon {
+            margin-right: 8px;
+            font-size: 25px;
+        }
+
+        .notification {
+            width: 15px;
+            height: 15px;
+            text-align: center;
+            line-height: 15px;
+            font-size: 10px;
+            background-color: #F8CECC;
+            border: 1px solid #BE5F5B;
+            border-radius: 50%;
+            position: absolute;
+            top: -5px;
+            left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo1">Logo</div>
+        <div class="nav1">
+            <div class="item1">About</div>
+            <div class="item1">Home</div>
+            <div class="item1">Contact</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="logo3">
+            <div>Logo</div>
+            <h3>Brand name</h3>
+        </div>
+
+        <div class="nav2">
+            <div class="item2">Home</div>
+            <div class="item2">About</div>
+            <div class="item2">Contact</div>
+            <div class="item2">Login</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="logo2">
+            <div>Logo</div>
+            <h3>Brand name</h3>
+        </div>
+
+        <div class="nav3">
+            <div class="item3">Home</div>
+            <div class="avt3"></div>
+            <div class="item3">Your name</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="avt4"></div>
+        <div class="center">
+            <div class="center__item">
+                <i class="fa-solid fa-house item__icon"></i>
+                <div class="item4">Home</div>
+            </div>
+            <div class="center__item">
+                <i class="fa-solid fa-user-group item__icon"></i>
+                <div class="item4">Friends</div>
+            </div>
+            <div class="center__item">
+                <i class="fa-solid fa-shop item__icon"></i>
+                <div class="item4">Market</div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="notify">
+                <i class="fa-solid fa-bell notify_icon"></i>
+                <div class="notification">1</div>
+            </div>
+            <div class="avt4"></div>
+            <div class="item4">Your name</div>
+        </div>
+    </div>
+
+</body>
+
+</html>

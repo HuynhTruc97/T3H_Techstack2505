@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 15</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+
+        .header {
+            background-color: #FFF2CC;
+            border: 1px solid #D6B657;
+            padding: 15px;
+            margin: 10px 10px 20px;
+        }
+
+        .feature {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 5px;
+        }
+
+        .feature>div {
+            width: 30px;
+            flex-grow: 1;
+            background-color: #EDC5C3;
+            border: 1px solid #CF8380;
+            padding: 25px 0;
+            margin: 0 5px 10px;
+        }
+
+        .image {
+            display: flex;
+        }
+
+        .image>div {
+            flex-grow: 1;
+            background-color: #ffff88;
+            border: 1px solid #5E6063;
+            padding: 50px 0;
+            margin: 10px;
+        }
+
+        .content {
+            height: 300px;
+            display: flex;
+        }
+
+        .content>div:first-child {
+            display: flex;
+            flex: 1;
+            background-color: #CDEB8B;
+            border: 1px solid #959E86;
+            margin: 10px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .sub-content {
+            display: flex;
+            flex-direction: column;
+            flex: 2;
+        }
+
+        .sub-content>div:first-child {
+            display: flex;
+            flex: 2;
+            background-color: #EDC5C3;
+            border: 1px solid #CF8380;
+            margin: 10px 10px 5px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .sub-content>div:last-child {
+            display: flex;
+            flex: 1;
+            background-color: #FFCC99;
+            border: 1px solid #959E86;
+            margin: 10px;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="feature">
+            <div>Feature 1</div>
+            <div>Feature 2</div>
+            <div>Feature 3</div>
+            <div>Feature 4</div>
+            <div>Feature 5</div>
+        </div>
+        <div class="feature">
+            <div>Feature 6</div>
+            <div>Feature 7</div>
+            <div>Feature 8</div>
+            <div>Feature 9</div>
+            <div>Feature 10</div>
+        </div>
+        <div class="image">
+            <div>Image 1</div>
+            <div>Image 2</div>
+        </div>
+        <div class="image">
+            <div>Image 3</div>
+            <div>Image 4</div>
+        </div>
+        <div class="content">
+            <div>Content 1</div>
+            <div class="sub-content">
+                <div>Content 2</div>
+                <div>Content 3</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
