@@ -1,0 +1,291 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+:root {
+    --primary-color: #96BB7C;
+    --text-color: #252B42;
+    --second-text-color: #737373;
+    --light-text-color: #FFFFFF;
+    --danger-color: #E74040;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 80px;
+    letter-spacing: 0.2px;
+    color: var(--text-color);
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: 0.2px;
+    color: var(--text-color);
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+    color: var(--text-color);
+}
+
+h4 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+    color: var(--second-text-color);
+}
+
+h5 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--primary-color);
+}
+
+h6 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--primary-color);
+}
+
+p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: var(--second-text-color);
+}
+
+.small-text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 13px;
+    letter-spacing: 0.2px;
+    color: var(--second-text-color);
+}
+
+.link-text {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.btn-text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.btn-login {
+    color: var(--primary-color);
+}
+
+.btn-join {
+    background-color: var(--primary-color);
+    color: var(--light-text-color);
+    padding: 15px 25px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.header {
+    background-color: #FFF2F3;
+}
+
+.header-nav {
+    padding: 16px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav__brandname {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: var(--text-color);
+}
+
+.header-nav__menu {
+    display: flex;
+    gap: 21px;
+}
+
+.menu-item {
+    color: var(--second-text-color);
+}
+
+.header-nav__action {
+    display: flex;
+    gap: 45px;
+}
+
+.header-cover {
+    padding: 10px 0;
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-cover__content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-left: 100px;
+}
+
+.header-cover__button {
+    display: flex;
+    gap: 10px;
+}
+
+.header-cover__content .btn-join {
+    padding: 15px 40px;
+}
+
+.header-cover__content .btn-more {
+    padding: 15px 40px;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+}
+
+.slider {
+    margin: 20px 100px;
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slider-content {
+    width: 507px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.slider-content__bar {
+    width: 94px;
+    height: 7px;
+    background-color: var(--danger-color);
+}
+
+.slider-content .link-text {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: var(--primary-color);
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: 20px 100px;
+}
+
+.team-discription {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.team-card {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card-item {
+    border-radius: 20px;
+    box-shadow: 0 12px 19px 0 rgba(0, 0, 0, 0.07);
+    overflow: hidden;
+}
+
+.card-item__avt {
+    width: 238px;
+    height: 231px;
+    object-fit: cover;
+}
+
+.card-item__info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    padding: 30px;
+}
+
+.card-item__name {
+    color: var(--text-color);
+}
+
+.social-item {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    margin: 0 100px;
+}
+
+.footer-container {
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-item__title {
+    color: var(--text-color);
+}
+
+.footer-item .link-text {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: var(--second-text-color);
+}
+
+.footer-connect {
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-policy {
+    color: var(--second-text-color);
+}
+
+.footer-connect .social-item {
+    width: 236px;
+}
